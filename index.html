@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TID 2026 · Chapters</title>
+<style>
+  :root{--ink:#1E2A31;--soft:#5C6A70;--line:#DDE2DD;--paper:#F1F3F0;--accent:#23577A}
+  *{box-sizing:border-box}
+  body{margin:0;padding:3rem 1.25rem 5rem;background:#fff;color:var(--ink);
+       font:16px/1.55 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif}
+  main{max-width:44rem;margin:0 auto}
+  h1{font-size:1.9rem;letter-spacing:-.02em;margin:0 0 .3rem}
+  p.lede{color:var(--soft);margin:0 0 2.2rem}
+  ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+  li{border-bottom:1px solid var(--line)}
+  a{display:flex;gap:1rem;align-items:baseline;padding:.85rem .4rem;
+    text-decoration:none;color:inherit}
+  a:hover{background:var(--paper)}
+  .wk{flex:0 0 4.2rem;color:var(--soft);font-variant-numeric:tabular-nums;font-size:.86rem}
+  .ttl{flex:1}
+  .go{color:var(--accent);font-size:.86rem}
+  footer{margin-top:2.5rem;color:var(--soft);font-size:.86rem}
+  footer a{display:inline;padding:0;color:var(--accent)}
+  @media (prefers-color-scheme:dark){
+    :root{--ink:#E8EDEA;--soft:#9AA7AC;--line:#2C3841;--paper:#1B242A;--accent:#7FB3D5}
+    body{background:#131A1F}
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Chapters</h1>
+  <p class="lede">Technical Interaction Design · ITU · Autumn 2026</p>
+  <ol id="list"></ol>
+  <footer>
+    Generated from the notes in
+    <a href="https://github.com/itu-tid/itu-tid.github.io">itu-tid.github.io</a>.
+    The <a href="https://itu-tid.github.io/">syllabus</a> says which notes make up which chapter.
+  </footer>
+</main>
+<script>
+const chapters = [
+  {
+    "week": 1,
+    "title": "First React app: components, props & state",
+    "file": "Week-01.pdf"
+  },
+  {
+    "week": 2,
+    "title": "React, part two: forms, lists, and local persistence",
+    "file": "Week-02.pdf"
+  },
+  {
+    "week": 3,
+    "title": "Understanding user needs",
+    "file": "Week-03.pdf"
+  },
+  {
+    "week": 4,
+    "title": "Database & login, together",
+    "file": "Week-04.pdf"
+  },
+  {
+    "week": 5,
+    "title": "Sharing: ACLs, roles, private vs shared",
+    "file": "Week-05.pdf"
+  },
+  {
+    "week": 6,
+    "title": "Routing, pages, and going live",
+    "file": "Week-06.pdf"
+  },
+  {
+    "week": 7,
+    "title": "Screens, and judging them: wireframing & usability",
+    "file": "Week-07.pdf"
+  },
+  {
+    "week": 8,
+    "title": "Git-flow, and pulling out the service layer",
+    "file": "Week-08.pdf"
+  },
+  {
+    "week": 9,
+    "title": "Making it look right: visual design & accessibility",
+    "file": "Week-09.pdf"
+  },
+  {
+    "week": 10,
+    "title": "Where the state goes: extraction and lifting",
+    "file": "Week-10.pdf"
+  },
+  {
+    "week": 11,
+    "title": "Talking to the backend well",
+    "file": "Week-11.pdf"
+  },
+  {
+    "week": 12,
+    "title": "Time-tracking, and the idea of context",
+    "file": "Week-12.pdf"
+  },
+  {
+    "week": 13,
+    "title": "Refactoring & owning the code",
+    "file": "Week-13.pdf"
+  },
+  {
+    "week": 14,
+    "title": "Own it at the exam",
+    "file": "Week-14.pdf"
+  }
+];
+document.getElementById('list').innerHTML = chapters.map(c =>
+  `<li><a href="${c.file}"><span class="wk">Week ${c.week}</span>`
+  + `<span class="ttl">${c.title}</span><span class="go">PDF &rarr;</span></a></li>`
+).join('');
+</script>
+</body>
+</html>

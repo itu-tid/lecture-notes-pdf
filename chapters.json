@@ -1,0 +1,72 @@
+[
+  {
+    "week": 1,
+    "title": "First React app: components, props & state",
+    "file": "Week-01.pdf"
+  },
+  {
+    "week": 2,
+    "title": "React, part two: forms, lists, and local persistence",
+    "file": "Week-02.pdf"
+  },
+  {
+    "week": 3,
+    "title": "Understanding user needs",
+    "file": "Week-03.pdf"
+  },
+  {
+    "week": 4,
+    "title": "Database & login, together",
+    "file": "Week-04.pdf"
+  },
+  {
+    "week": 5,
+    "title": "Sharing: ACLs, roles, private vs shared",
+    "file": "Week-05.pdf"
+  },
+  {
+    "week": 6,
+    "title": "Routing, pages, and going live",
+    "file": "Week-06.pdf"
+  },
+  {
+    "week": 7,
+    "title": "Screens, and judging them: wireframing & usability",
+    "file": "Week-07.pdf"
+  },
+  {
+    "week": 8,
+    "title": "Git-flow, and pulling out the service layer",
+    "file": "Week-08.pdf"
+  },
+  {
+    "week": 9,
+    "title": "Making it look right: visual design & accessibility",
+    "file": "Week-09.pdf"
+  },
+  {
+    "week": 10,
+    "title": "Where the state goes: extraction and lifting",
+    "file": "Week-10.pdf"
+  },
+  {
+    "week": 11,
+    "title": "Talking to the backend well",
+    "file": "Week-11.pdf"
+  },
+  {
+    "week": 12,
+    "title": "Time-tracking, and the idea of context",
+    "file": "Week-12.pdf"
+  },
+  {
+    "week": 13,
+    "title": "Refactoring & owning the code",
+    "file": "Week-13.pdf"
+  },
+  {
+    "week": 14,
+    "title": "Own it at the exam",
+    "file": "Week-14.pdf"
+  }
+]
